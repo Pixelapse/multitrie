@@ -1,3 +1,4 @@
+import logging
 from collections import deque
 # Not thread-safe, use from one thread only or obtain a lock!
 
