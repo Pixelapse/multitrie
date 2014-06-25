@@ -7,8 +7,8 @@ multitrie
 
 e.g.
 
-    pip install git+git://github.com/Pixelapse/multitrie.git@v0.0.1
+    pip install git+git://github.com/Pixelapse/multitrie.git@v0.0.2
 
-If using requirements.txt
+If you're using requirements.txt, add this:
 
-    git://github.com/Pixelapse/multitrie.git@v0.0.1#egg=multitrie
+    git+git://github.com/Pixelapse/multitrie.git@v0.0.2#egg=multitrie
