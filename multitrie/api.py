@@ -50,13 +50,15 @@ class MultiTrie(object):
   ##############################################################################
 
   # Node iterators
-  def niterkeys(self, node, parts=[]):
+  def niterkeys(self, node, parts=None):
+    parts = parts or []
     return chain([self.to_key(parts)] if node.values else (), chain.from_iterable(self.niterkeys(child, parts + [part]) for (part, child) in node.children.iteritems()))
 
   def nitervalues(self, node):
     return chain(node.values, chain.from_iterable(self.nitervalues(child) for child in node.children.itervalues()))
 
-  def niteritems(self, node, parts=[]):
+  def niteritems(self, node, parts=None):
+    parts = parts or []
     key = self.to_key(parts)
     return chain(((key, value) for value in node.values), chain.from_iterable(self.niteritems(child, parts + [part]) for (part, child) in node.children.iteritems()))
 
