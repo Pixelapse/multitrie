@@ -5,11 +5,9 @@ try:
 except ImportError:
   from distutils.core import setup
 
-import multitrie
-
 setup(
   name='multitrie',
-  version=multitrie.__version__,
+  version='0.0.1',
   url='http://github.com/Pixelapse/multitrie',
   author='Michael Wu',
   author_email='michael@pixelapse.com',
