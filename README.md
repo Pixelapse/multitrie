@@ -1,10 +1,10 @@
 multitrie
 =======
 
-## Installation Instructions
+A python implementation of the [Trie data structure](http://en.wikipedia.org/wiki/Trie)
 
-    pip install "git+git://github.com/Pixelapse/multitrie.git@v0.0.2#egg=multitrie"
+## Installation
 
-If you're using requirements.txt, add this:
+Simply run:
 
-    git+git://github.com/Pixelapse/multitrie.git@v0.0.2#egg=multitrie
+    $ pip install multitrie
