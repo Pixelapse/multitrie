@@ -14,6 +14,7 @@ setup(
   maintainer='Pixelapse',
   maintainer_email='hello@pixelapse.com',
   packages=find_packages(),
+  description='Implementation of the trie data structure',
   long_description=open('README.md').read(),
   license=open('LICENSE').read()
 )
