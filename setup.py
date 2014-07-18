@@ -5,7 +5,7 @@ try:
 except ImportError:
   from distutils.core import setup
 
-version = '0.0.1'
+version = '0.0.3'
 
 setup(
   name='multitrie',
