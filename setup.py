@@ -5,9 +5,12 @@ try:
 except ImportError:
   from distutils.core import setup
 
+version = '0.0.1'
+
 setup(
   name='multitrie',
-  version='0.0.1',
+  version=version,
+  download_url='https://github.com/Pixelapse/multitrie/tarball/v%s' % version,
   url='http://github.com/Pixelapse/multitrie',
   author='Michael Wu',
   author_email='michael@pixelapse.com',
